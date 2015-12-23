@@ -6,9 +6,9 @@ This is a Google code-in project. It is written in C++.
 
 Dependency:
 ----------
-libcurl
-libjsoncpp
-C++11
+-libcurl
+-libjsoncpp
+-C++11
 
 First build it:
 
