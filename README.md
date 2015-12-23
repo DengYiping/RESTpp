@@ -13,8 +13,11 @@ C++11
 First build it:
 
 git clone https://github.com/DengYiping/RESTpp.git
+
 cd RESTpp
+
 cd RESTpp
+
 make
 
 Then run:
