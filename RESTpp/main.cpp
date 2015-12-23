@@ -24,6 +24,10 @@ int main(int argc, const char * argv[]) {
     std::cin>>id;
     if(id == -1)
       break;
+    if(id == 0){
+      printf("error input\n");
+      break;
+    }
     if(id < 1 or id > 100)//error range, start again
     {
       printf("error range, please enter again.\n");
