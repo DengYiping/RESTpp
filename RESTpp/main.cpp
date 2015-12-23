@@ -7,9 +7,11 @@
 //
 
 #include <iostream>
-
+#include "curl.hpp"
+#include <json/json.h>
 int main(int argc, const char * argv[]) {
-  // insert code here...
-  std::cout << "Hello, World!\n";
-    return 0;
+  curl::init();
+  printf("Greetings. This is a simple REST client for C++, simply enter the id number, and I will parse json for you. When you want to exit, enter -1 instead.");
+  
+  curl::cleanup();
 }

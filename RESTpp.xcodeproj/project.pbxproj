@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D29155031C2A587F00B4AA88 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D29155021C2A587F00B4AA88 /* main.cpp */; };
+		D291550A1C2A58E100B4AA88 /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D29155091C2A58E100B4AA88 /* libcurl.tbd */; };
+		D291550D1C2A591C00B4AA88 /* curl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D291550B1C2A591C00B4AA88 /* curl.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		D29154FF1C2A587F00B4AA88 /* RESTpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RESTpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29155021C2A587F00B4AA88 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D29155091C2A58E100B4AA88 /* libcurl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.tbd; path = usr/lib/libcurl.tbd; sourceTree = SDKROOT; };
+		D291550B1C2A591C00B4AA88 /* curl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = curl.cpp; sourceTree = "<group>"; };
+		D291550C1C2A591C00B4AA88 /* curl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = curl.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D291550A1C2A58E100B4AA88 /* libcurl.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,7 @@
 		D29154F61C2A587F00B4AA88 = {
 			isa = PBXGroup;
 			children = (
+				D29155091C2A58E100B4AA88 /* libcurl.tbd */,
 				D29155011C2A587F00B4AA88 /* RESTpp */,
 				D29155001C2A587F00B4AA88 /* Products */,
 			);
@@ -58,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				D29155021C2A587F00B4AA88 /* main.cpp */,
+				D291550B1C2A591C00B4AA88 /* curl.cpp */,
+				D291550C1C2A591C00B4AA88 /* curl.hpp */,
 			);
 			path = RESTpp;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D29155031C2A587F00B4AA88 /* main.cpp in Sources */,
+				D291550D1C2A591C00B4AA88 /* curl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +217,9 @@
 		D29155071C2A587F00B4AA88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "-ljsoncpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +227,9 @@
 		D29155081C2A587F00B4AA88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "-ljsoncpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
