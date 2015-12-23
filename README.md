@@ -8,5 +8,16 @@ Dependency:
 ----------
 libcurl
 libjsoncpp
+C++11
 
-Thank you for your support.
+First build it:
+
+git clone https://github.com/DengYiping/RESTpp.git
+cd RESTpp
+cd RESTpp
+make
+
+Then run:
+
+./RESTpp
+
