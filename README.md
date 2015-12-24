@@ -15,7 +15,13 @@ C++11
 How to install the dependency:
 ---------------------------
 ###MAC OS X:
+First, install homebrew and Xcode
 
+brew install jsoncpp
+
+Then open the xcodeproject file.
+
+Click run.
 
 Take Ubuntu as a example:
 
