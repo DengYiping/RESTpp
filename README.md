@@ -14,6 +14,8 @@ C++11
 
 How to install the dependency:
 ---------------------------
+###MAC OS X:
+
 
 Take Ubuntu as a example:
 
