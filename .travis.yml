@@ -7,6 +7,9 @@ before_install:
   - sudo apt-get update -q
   - sudo apt-get install libjsoncpp-dev libcurl3 g++-4.9 -y
 
-script: make
+script:
+  - cd RESTpp
+  - make
+
 sudo: required
 dist: trusty
