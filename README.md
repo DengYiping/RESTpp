@@ -1,7 +1,7 @@
 Google code-in: REST and JSON: Make an executable program (html, java, c, c++ etc)
 -------------
 -------------
-
+[![Build Status](https://travis-ci.org/DengYiping/RESTpp.svg?branch=master)](https://travis-ci.org/DengYiping/RESTpp)
 This is a Google code-in project. It is written in C++.
 
 Dependency:
@@ -53,4 +53,3 @@ Then run:
 --------
 
 ./RESTpp
-
