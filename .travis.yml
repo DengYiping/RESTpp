@@ -1,0 +1,11 @@
+language:
+  - cpp
+  compiler:
+  - g++-4.9
+before_install:
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+  - sudo apt-get update -q
+  - sudo apt-get install libjsoncpp-dev libcurl3 g++-4.9 -y
+script: make
+sudo: required
+dist: trusty
