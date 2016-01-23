@@ -13,5 +13,5 @@ RUN apt-get install libjsoncpp-dev libcurl3 g++-4.9 -y
 RUN apt-get -y install make
 WORKDIR RESTpp
 #compile
-RUN 'cd RESTpp; make'
+RUN cd RESTpp && make
 #we don't have entrypoint because it only have interactive mode.
