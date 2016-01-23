@@ -11,8 +11,8 @@ RUN apt-get upgrade -y
 
 RUN apt-get -y install g++-4.9
 RUN apt-get -y install make
-WORKDIR /RESTpp/RESTpp
+WORKDIR RESTpp
 #compile
 RUN ls
-RUN make
+RUN ./RESTpp/make
 #we don't have entrypoint because it only have interactive mode.
