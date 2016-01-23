@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 #update
 RUN apt-get update
-RUN apt-get -y install python-software-properties
+RUN apt-get -y install software-properties-common
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test
 RUN apt-get update
 RUN apt-get upgrade -y
