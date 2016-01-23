@@ -12,7 +12,7 @@ RUN apt-get install libjsoncpp-dev libcurl4-openssl-dev g++-4.9 git -y
 
 RUN apt-get -y install make
 RUN git clone https://github.com/DengYiping/RESTpp.git
-WORKDIR RESTpp
+WORKDIR RESTpp/RESTpp
 #compile
 RUN make
 #we don't have entrypoint because it only have interactive mode.
