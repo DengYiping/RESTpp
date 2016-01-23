@@ -14,5 +14,5 @@ RUN apt-get -y install make
 WORKDIR RESTpp
 #compile
 RUN ls
-RUN ./RESTpp/make
+RUN cd RESTpp; make
 #we don't have entrypoint because it only have interactive mode.
