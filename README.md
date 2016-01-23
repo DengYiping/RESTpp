@@ -12,6 +12,12 @@ Dependency:
 
 How to install and run:
 ---------------------------
+###Install and run using Docker
+```
+docker run -it dengyiping/restpp /bin/bash
+
+./RESTpp
+```
 ###MAC OS X:
 First, install homebrew and Xcode
 ```
@@ -40,12 +46,6 @@ cd RESTpp
 cd RESTpp
 
 make
-
-./RESTpp
-```
-###Install and runusing Docker
-```
-docker run -it dengyiping/restpp /bin/bash
 
 ./RESTpp
 ```
