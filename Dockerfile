@@ -13,5 +13,6 @@ RUN apt-get -y install g++-4.9
 RUN apt-get -y install make
 WORKDIR /RESTpp/RESTpp
 #compile
+RUN ls
 RUN make
 #we don't have entrypoint because it only have interactive mode.
