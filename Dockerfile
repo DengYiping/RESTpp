@@ -10,7 +10,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 RUN apt-get -y install g++-4.9
-
+RUN apt-get -y install make
 WORKDIR RESTpp/RESTpp
 #compile
 RUN make
